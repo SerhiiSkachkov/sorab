@@ -1,0 +1,352 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@2-name: '2';
+@2-x: 0px;
+@2-y: 600px;
+@2-offset-x: 0px;
+@2-offset-y: -600px;
+@2-width: 96px;
+@2-height: 106px;
+@2-total-width: 784px;
+@2-total-height: 706px;
+@2-image: '../img/sprite.png';
+@2: 0px 600px 0px -600px 96px 106px 784px 706px '../img/sprite.png' '2';
+@2-2x-name: '2@2x';
+@2-2x-x: 293px;
+@2-2x-y: 359px;
+@2-2x-offset-x: -293px;
+@2-2x-offset-y: -359px;
+@2-2x-width: 192px;
+@2-2x-height: 212px;
+@2-2x-total-width: 784px;
+@2-2x-total-height: 706px;
+@2-2x-image: '../img/sprite.png';
+@2-2x: 293px 359px -293px -359px 192px 212px 784px 706px '../img/sprite.png' '2@2x';
+@2-3x-name: '2@3x';
+@2-3x-x: 437px;
+@2-3x-y: 0px;
+@2-3x-offset-x: -437px;
+@2-3x-offset-y: 0px;
+@2-3x-width: 288px;
+@2-3x-height: 318px;
+@2-3x-total-width: 784px;
+@2-3x-total-height: 706px;
+@2-3x-image: '../img/sprite.png';
+@2-3x: 437px 0px -437px 0px 288px 318px 784px 706px '../img/sprite.png' '2@3x';
+@left-name: 'left';
+@left-x: 753px;
+@left-y: 368px;
+@left-offset-x: -753px;
+@left-offset-y: -368px;
+@left-width: 18px;
+@left-height: 34px;
+@left-total-width: 784px;
+@left-total-height: 706px;
+@left-image: '../img/sprite.png';
+@left: 753px 368px -753px -368px 18px 34px 784px 706px '../img/sprite.png' 'left';
+@left-2x-name: 'left@2x';
+@left-2x-x: 730px;
+@left-2x-y: 180px;
+@left-2x-offset-x: -730px;
+@left-2x-offset-y: -180px;
+@left-2x-width: 36px;
+@left-2x-height: 68px;
+@left-2x-total-width: 784px;
+@left-2x-total-height: 706px;
+@left-2x-image: '../img/sprite.png';
+@left-2x: 730px 180px -730px -180px 36px 68px 784px 706px '../img/sprite.png' 'left@2x';
+@left-3x-name: 'left@3x';
+@left-3x-x: 639px;
+@left-3x-y: 359px;
+@left-3x-offset-x: -639px;
+@left-3x-offset-y: -359px;
+@left-3x-width: 54px;
+@left-3x-height: 102px;
+@left-3x-total-width: 784px;
+@left-3x-total-height: 706px;
+@left-3x-image: '../img/sprite.png';
+@left-3x: 639px 359px -639px -359px 54px 102px 784px 706px '../img/sprite.png' 'left@3x';
+@oval-left-name: 'oval-left';
+@oval-left-x: 730px;
+@oval-left-y: 253px;
+@oval-left-offset-x: -730px;
+@oval-left-offset-y: -253px;
+@oval-left-width: 32px;
+@oval-left-height: 32px;
+@oval-left-total-width: 784px;
+@oval-left-total-height: 706px;
+@oval-left-image: '../img/sprite.png';
+@oval-left: 730px 253px -730px -253px 32px 32px 784px 706px '../img/sprite.png' 'oval-left';
+@oval-left-2x-name: 'oval-left@2x';
+@oval-left-2x-x: 490px;
+@oval-left-2x-y: 482px;
+@oval-left-2x-offset-x: -490px;
+@oval-left-2x-offset-y: -482px;
+@oval-left-2x-width: 64px;
+@oval-left-2x-height: 64px;
+@oval-left-2x-total-width: 784px;
+@oval-left-2x-total-height: 706px;
+@oval-left-2x-image: '../img/sprite.png';
+@oval-left-2x: 490px 482px -490px -482px 64px 64px 784px 706px '../img/sprite.png' 'oval-left@2x';
+@oval-left-3x-name: 'oval-left@3x';
+@oval-left-3x-x: 202px;
+@oval-left-3x-y: 600px;
+@oval-left-3x-offset-x: -202px;
+@oval-left-3x-offset-y: -600px;
+@oval-left-3x-width: 96px;
+@oval-left-3x-height: 96px;
+@oval-left-3x-total-width: 784px;
+@oval-left-3x-total-height: 706px;
+@oval-left-3x-image: '../img/sprite.png';
+@oval-left-3x: 202px 600px -202px -600px 96px 96px 784px 706px '../img/sprite.png' 'oval-left@3x';
+@oval-right-2-name: 'oval-right-2';
+@oval-right-2-x: 730px;
+@oval-right-2-y: 290px;
+@oval-right-2-offset-x: -730px;
+@oval-right-2-offset-y: -290px;
+@oval-right-2-width: 32px;
+@oval-right-2-height: 32px;
+@oval-right-2-total-width: 784px;
+@oval-right-2-total-height: 706px;
+@oval-right-2-image: '../img/sprite.png';
+@oval-right-2: 730px 290px -730px -290px 32px 32px 784px 706px '../img/sprite.png' 'oval-right-2';
+@oval-right-2-2x-name: 'oval-right-2@2x';
+@oval-right-2-2x-x: 559px;
+@oval-right-2-2x-y: 482px;
+@oval-right-2-2x-offset-x: -559px;
+@oval-right-2-2x-offset-y: -482px;
+@oval-right-2-2x-width: 64px;
+@oval-right-2-2x-height: 64px;
+@oval-right-2-2x-total-width: 784px;
+@oval-right-2-2x-total-height: 706px;
+@oval-right-2-2x-image: '../img/sprite.png';
+@oval-right-2-2x: 559px 482px -559px -482px 64px 64px 784px 706px '../img/sprite.png' 'oval-right-2@2x';
+@oval-right-2-3x-name: 'oval-right-2@3x';
+@oval-right-2-3x-x: 101px;
+@oval-right-2-3x-y: 600px;
+@oval-right-2-3x-offset-x: -101px;
+@oval-right-2-3x-offset-y: -600px;
+@oval-right-2-3x-width: 96px;
+@oval-right-2-3x-height: 96px;
+@oval-right-2-3x-total-width: 784px;
+@oval-right-2-3x-total-height: 706px;
+@oval-right-2-3x-image: '../img/sprite.png';
+@oval-right-2-3x: 101px 600px -101px -600px 96px 96px 784px 706px '../img/sprite.png' 'oval-right-2@3x';
+@people-one-name: 'people-one';
+@people-one-x: 771px;
+@people-one-y: 107px;
+@people-one-offset-x: -771px;
+@people-one-offset-y: -107px;
+@people-one-width: 8px;
+@people-one-height: 12px;
+@people-one-total-width: 784px;
+@people-one-total-height: 706px;
+@people-one-image: '../img/sprite.png';
+@people-one: 771px 107px -771px -107px 8px 12px 784px 706px '../img/sprite.png' 'people-one';
+@people-one-2x-name: 'people-one@2x';
+@people-one-2x-x: 767px;
+@people-one-2x-y: 253px;
+@people-one-2x-offset-x: -767px;
+@people-one-2x-offset-y: -253px;
+@people-one-2x-width: 16px;
+@people-one-2x-height: 24px;
+@people-one-2x-total-width: 784px;
+@people-one-2x-total-height: 706px;
+@people-one-2x-image: '../img/sprite.png';
+@people-one-2x: 767px 253px -767px -253px 16px 24px 784px 706px '../img/sprite.png' 'people-one@2x';
+@people-one-3x-name: 'people-one@3x';
+@people-one-3x-x: 730px;
+@people-one-3x-y: 327px;
+@people-one-3x-offset-x: -730px;
+@people-one-3x-offset-y: -327px;
+@people-one-3x-width: 24px;
+@people-one-3x-height: 36px;
+@people-one-3x-total-width: 784px;
+@people-one-3x-total-height: 706px;
+@people-one-3x-image: '../img/sprite.png';
+@people-one-3x: 730px 327px -730px -327px 24px 36px 784px 706px '../img/sprite.png' 'people-one@3x';
+@people-name: 'people';
+@people-x: 490px;
+@people-y: 359px;
+@people-offset-x: -490px;
+@people-offset-y: -359px;
+@people-width: 144px;
+@people-height: 118px;
+@people-total-width: 784px;
+@people-total-height: 706px;
+@people-image: '../img/sprite.png';
+@people: 490px 359px -490px -359px 144px 118px 784px 706px '../img/sprite.png' 'people';
+@people-2x-name: 'people@2x';
+@people-2x-x: 0px;
+@people-2x-y: 359px;
+@people-2x-offset-x: 0px;
+@people-2x-offset-y: -359px;
+@people-2x-width: 288px;
+@people-2x-height: 236px;
+@people-2x-total-width: 784px;
+@people-2x-total-height: 706px;
+@people-2x-image: '../img/sprite.png';
+@people-2x: 0px 359px 0px -359px 288px 236px 784px 706px '../img/sprite.png' 'people@2x';
+@people-3x-name: 'people@3x';
+@people-3x-x: 0px;
+@people-3x-y: 0px;
+@people-3x-offset-x: 0px;
+@people-3x-offset-y: 0px;
+@people-3x-width: 432px;
+@people-3x-height: 354px;
+@people-3x-total-width: 784px;
+@people-3x-total-height: 706px;
+@people-3x-image: '../img/sprite.png';
+@people-3x: 0px 0px 0px 0px 432px 354px 784px 706px '../img/sprite.png' 'people@3x';
+@right-name: 'right';
+@right-x: 730px;
+@right-y: 368px;
+@right-offset-x: -730px;
+@right-offset-y: -368px;
+@right-width: 18px;
+@right-height: 34px;
+@right-total-width: 784px;
+@right-total-height: 706px;
+@right-image: '../img/sprite.png';
+@right: 730px 368px -730px -368px 18px 34px 784px 706px '../img/sprite.png' 'right';
+@right-2x-name: 'right@2x';
+@right-2x-x: 730px;
+@right-2x-y: 107px;
+@right-2x-offset-x: -730px;
+@right-2x-offset-y: -107px;
+@right-2x-width: 36px;
+@right-2x-height: 68px;
+@right-2x-total-width: 784px;
+@right-2x-total-height: 706px;
+@right-2x-image: '../img/sprite.png';
+@right-2x: 730px 107px -730px -107px 36px 68px 784px 706px '../img/sprite.png' 'right@2x';
+@right-3x-name: 'right@3x';
+@right-3x-x: 730px;
+@right-3x-y: 0px;
+@right-3x-offset-x: -730px;
+@right-3x-offset-y: 0px;
+@right-3x-width: 54px;
+@right-3x-height: 102px;
+@right-3x-total-width: 784px;
+@right-3x-total-height: 706px;
+@right-3x-image: '../img/sprite.png';
+@right-3x: 730px 0px -730px 0px 54px 102px 784px 706px '../img/sprite.png' 'right@3x';
+@ruble-name: 'ruble';
+@ruble-x: 771px;
+@ruble-y: 124px;
+@ruble-offset-x: -771px;
+@ruble-offset-y: -124px;
+@ruble-width: 8px;
+@ruble-height: 10px;
+@ruble-total-width: 784px;
+@ruble-total-height: 706px;
+@ruble-image: '../img/sprite.png';
+@ruble: 771px 124px -771px -124px 8px 10px 784px 706px '../img/sprite.png' 'ruble';
+@ruble-2x-name: 'ruble@2x';
+@ruble-2x-x: 767px;
+@ruble-2x-y: 290px;
+@ruble-2x-offset-x: -767px;
+@ruble-2x-offset-y: -290px;
+@ruble-2x-width: 16px;
+@ruble-2x-height: 20px;
+@ruble-2x-total-width: 784px;
+@ruble-2x-total-height: 706px;
+@ruble-2x-image: '../img/sprite.png';
+@ruble-2x: 767px 290px -767px -290px 16px 20px 784px 706px '../img/sprite.png' 'ruble@2x';
+@ruble-3x-name: 'ruble@3x';
+@ruble-3x-x: 759px;
+@ruble-3x-y: 327px;
+@ruble-3x-offset-x: -759px;
+@ruble-3x-offset-y: -327px;
+@ruble-3x-width: 24px;
+@ruble-3x-height: 30px;
+@ruble-3x-total-width: 784px;
+@ruble-3x-total-height: 706px;
+@ruble-3x-image: '../img/sprite.png';
+@ruble-3x: 759px 327px -759px -327px 24px 30px 784px 706px '../img/sprite.png' 'ruble@3x';
+@spritesheet-width: 784px;
+@spritesheet-height: 706px;
+@spritesheet-image: '../img/sprite.png';
+@spritesheet-sprites: @2 @2-2x @2-3x @left @left-2x @left-3x @oval-left @oval-left-2x @oval-left-3x @oval-right-2 @oval-right-2-2x @oval-right-2-3x @people-one @people-one-2x @people-one-3x @people @people-2x @people-3x @right @right-2x @right-3x @ruble @ruble-2x @ruble-3x;
+@spritesheet: 784px 706px '../img/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

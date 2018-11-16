@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+        <title>02.00 Crowdsorsing active</title>
+        <meta name='description' content="" />
+        <meta name="keywords" content="" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body class="loaded">
+        <!-- BEGIN BODY -->
+        <div class="main-wrapper">
+            <!-- BEGIN CONTENT -->
+            <main class="content">
+                <div class="fixed-nav-block">
+                    <nav class="nav nav_crowdsorsing fixed-block">
+                        <div class="wrapper">
+                            <div class="nav-list-wrap scroll">
+                                <ul class="nav-list">
+                                    <li class="nav-list__item">
+                                        <a href="#purposesId" class="nav-list-link active">Цели и задачи</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="#demandsId" class="nav-list-link">Что требуется от волонетров?</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="#dutiesId" class="nav-list-link">Обязанности</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="#scheduleId" class="nav-list-link">Расписание</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="#contactsId" class="nav-list-link">Контакты</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="#mapId" class="nav-list-link">Как добраться?</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="#pastEventsId" class="nav-list-link">Прошедшие мероприятия</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="wrapper-content">
+                    <div class="wrapper">
+                        <aside>
+                            <div class="volunteer-block">
+                                <a href="#" class="btn_blue btn-volunteer js-steps-volounter-link">Стать волонтёром</a>
+                                <form id="volunteer-steps">
+                                    <div class="box-decor volunteer-steps js-steps-volounter">
+                                        <div class="volunteer-step" id="volunteer-step-1">
+                                            <div class="volunteer-step__title">Выберите даты</div>                               
+                                            <div class="box-field-calendar js-box-field-calendar">
+                                                <input type="text" name="dateVolunteer" class="form-control form-control-date pageRequired js-date" placeholder="Дата начала – дата завершения">
+                                                <i class="icon-calendar"></i>
+                                            </div>
+                                            <div class="volunteer-step__row">
+                                                <span class="volunteer-step__counts">Шаг 1 из 3</span>
+                                                <button type="button" class="btn_blue btn-next-step js-link-step-2">Далее <span>→</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="volunteer-step" id="volunteer-step-2">
+                                            <div class="volunteer-step__title">Ваши навыки</div>
+                                            <div class="fields-check">
+                                                <div>
+                                                    <div class="box-field-check">
+                                                        <input type="checkbox" class="form-check styled pageRequired" id="choice-1" name="checkboxes">
+                                                        <label for="choice-1" class="box-field-check__label">Установка лавочек в особо-сложных полевых условиях</label>
+                                                    </div>
+                                                    <div class="box-field-check">
+                                                        <input type="checkbox" class="form-check styled pageRequired" id="choice-2" name="checkboxes">
+                                                        <label for="choice-2" class="box-field-check__label">Покраска древесины</label>
+                                                    </div>
+                                                    <div class="box-field-check">
+                                                        <input type="checkbox" class="form-check styled pageRequired" id="choice-3" name="checkboxes">
+                                                        <label for="choice-3" class="box-field-check__label">Знание английского</label>
+                                                    </div>
+                                                    <div class="box-field-check">
+                                                        <input type="checkbox" class="form-check styled pageRequired" id="choice-4" name="checkboxes">
+                                                        <label for="choice-4" class="box-field-check__label">Коммуникабельность и стрессоустойчивость</label>
+                                                    </div>
+                                                </div>
+                                                <div class="volunteer-step__row">
+                                                    <span class="volunteer-step__counts">Шаг 2 из 3</span>
+                                                    <button type="button" class="btn_blue btn-next-step js-link-step-3">Далее <span>→</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="volunteer-step volunteer-step_last" id="volunteer-step-3">
+                                            <div class="volunteer-step__heading">
+                                                <div class="volunteer-step__title">Тип участия</div>
+                                                <div class="type-participation-arrow"></div>
+                                            </div>
+                                            <div class="type-participation">
+                                                <div class="type-participation__list js-slider-11">
+                                                    <div class="type-participation__item">
+                                                        <input type="radio" id="participation-1"  name="participation" class="type-participation__input styled pageRequired">
+                                                        <label for="participation-1" class="type-participation__label">
+                                                            <span class="type-participation__title">Поддержать мероприятие безвозмездно</span>
+                                                            <span class="type-participation__description">Спасибо, мне не нужно вознаграждений, я просто хочу поддержать проект</span>
+                                                            <span class="type-participation__count">1000 ₽</span>
+                                                            <span class="type-participation__overlay"><span>Выбрать</span></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="type-participation__item">
+                                                        <input type="radio" id="participation-2"  name="participation" class="type-participation__input styled pageRequired">
+                                                        <label for="participation-2" class="type-participation__label">
+                                                            <span class="type-participation__title">Денежное вознагрождение</span>
+                                                            <span class="type-participation__description">Оплата 100% за работу на мероприятии</span>
+                                                            <span class="type-participation__count">1000 ₽</span>
+                                                            <span class="type-participation__overlay"><span>Выбрать</span></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="type-participation__item">
+                                                        <input type="radio" id="participation-3"  name="participation" class="type-participation__input styled pageRequired">
+                                                        <label for="participation-3" class="type-participation__label">
+                                                            <span class="type-participation__title">Альбом в подарок</span>
+                                                            <span class="type-participation__description">Альбом с фотографиями на память, получение самовывозом в центре Москвы</span>
+                                                            <span class="type-participation__count">1000 ₽</span>
+                                                            <span class="type-participation__overlay"><span>Выбрать</span></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="volunteer-step__btn">
+                                                <button type="submit" class="btn_blue btn-volunteer js-volounter" data-href="#volunteerModal">Стать волонтёром</button>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="close-steps js-close-steps"><i class="icon-close"></i></a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="box-decor box-supports">
+                                <div class="supports-title">Все поддержавшие</div>
+                                <div class="supports-subtitle">128 человек из 150</div>
+                                <div class="supports supports-aside">
+                                    <div class="supports__item">
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-1.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-2.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-3.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-4.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-5.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-4.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-3.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-2.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-3.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-1.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-3.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-1.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-1.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-2.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-3.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-4.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-5.jpg" alt="" title=""></a>
+                                        </div>
+                                        <div class="supports__avatar">
+                                            <a href="#"><img src="img/team-4.jpg" alt="" title=""></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="main-block">
+                            <div class="box-decor box-purposes purposes-custom" id="purposesId">
+                        		<h3 class="purposes-heading">Цели и задачи мероприятия</h3>
+                        		<div class="purpose purpose-crowdsorsing project-active js-slider-8">
+                        			<div class="purpose__item">
+                        				<div class="purpose__count">1</div>
+                        				<div class="purpose__description">Повышение уровня жизненного комфорта в регионах</div>
+                        			</div>
+                        			<div class="purpose__item">
+                        				<div class="purpose__count">2</div>
+                        				<div class="purpose__description">Увеличение социальной вовлеченности в проблемы окружающей среды у обычных граждан</div>
+                        			</div>
+                        			<div class="purpose__item">
+                        				<div class="purpose__count">3</div>
+                        				<div class="purpose__description">Повышение уровня жизненного комфорта в регионах</div>
+                        			</div>
+                        			<div class="purpose__item">
+                        				<div class="purpose__count">4</div>
+                        				<div class="purpose__description">Увеличение социальной вовлеченности в проблемы окружающей среды у обычных граждан</div>
+                        			</div>
+                        		</div>
+                            </div>
+
+                            <div class="box-decor box-information" id="demandsId">
+                                <h3 class="information-title">Что требуется от волонтёров?</h3>
+                                <div class="information-block">
+                                    <p>Ретроконверсия национального наследия, не меняя концепции, изложенной выше, актаульна как никогда. Надо сказать, что построение бренда изменяет ролевой фирменный стиль, опираясь на опыт западных коллег. Дело в том, что привлечение аудитории существенно ускоряет имидж, невзирая на действия конкурентов. </p>
+                                </div>
+                                <div class="demands">
+                                    <div class="demands__item">
+                                        <div class="demands__picture">
+                                            <div class="demands__age demands__bg">18+</div>
+                                        </div>
+                                        <div class="demands__title">Возраст от 18 до 40</div>
+                                    </div>
+                                    <div class="demands__item">
+                                        <div class="demands__picture">
+                                            <img src="img/en.jpg" alt="" class="demands__logo">
+                                        </div>
+                                        <div class="demands__title">Знание английского</div>
+                                    </div>
+                                    <div class="demands__item">
+                                        <div class="demands__picture">
+                                            <div class="demands__check demands__bg bg-orange"><i class="icon-check"></i></div>
+                                        </div>
+                                        <div class="demands__title">Опыт установки лавочек</div>
+                                    </div>
+                                    <div class="demands__item">
+                                        <div class="demands__picture">                                            
+                                            <div class="demands__check demands__bg bg-blue"><i class="icon-check"></i></div>
+                                        </div>
+                                        <div class="demands__title">Опыт покраски древесины</div>
+                                    </div>
+                                </div>
+                                <div class="information-details">
+                                    <strong class="information-note">Что необходимо иметь:</strong>
+                                    <ul class="list-decor">
+                                        <li>Теплая обувь</li>
+                                        <li>Аптечка</li>
+                                        <li>Вместительные рюкзаки</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="box-decor box-information" id="dutiesId">
+                                <h3 class="information-title">Обязанности</h3>
+                                <div class="information-block">
+                                    <p>Ретроконверсия национального наследия, не меняя концепции, изложенной выше, актаульна как никогда. Надо сказать, что построение бренда изменяет ролевой фирменный стиль, опираясь на опыт западных коллег. Дело в том, что привлечение аудитории существенно ускоряет имидж, невзирая на действия конкурентов.</p>
+                                </div>
+                                <ul class="list-decor">
+                                    <li>Монтаж и установка лавочек</li>
+                                    <li>Покраска и лакировка древесины</li>
+                                    <li>Облагораживание территории вокруг и уборка после проведенных работ</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="box-decor">
+                                <div class="box-schedule js-tab-wrap" id="scheduleId">
+                                    <div class="schedule-head">
+                                       <h2 class="h3 schedule-title">Расписание</h2>
+                                       <div class="schedule-nav-inner scroll"> 
+                                            <ul class="schedule-nav">
+                                                <li class="schedule-nav__item">
+                                                    <a href="#schedule-1" class="schedule-nav__link active js-tab-nav">19.05</a>
+                                                </li>
+                                                <li class="schedule-nav__item">
+                                                    <a href="#schedule-2" class="schedule-nav__link js-tab-nav">20.05</a>
+                                                </li>
+                                                <li class="schedule-nav__item">
+                                                    <a href="#schedule-3" class="schedule-nav__link js-tab-nav">21.05</a>
+                                                </li>
+                                            </ul>
+                                        </div>   
+                                    </div>
+                                    <div class="schedule">
+                                        <div class="tab js-tab active" id="schedule-1">
+                                            <div class="schedule__item">
+                                                <i class="schedule__icon"></i>
+                                                <div class="schedule__time">09:00</div>
+                                                <div class="schedule__description">Ретроконверсия национального наследия, не меняя концепции, изложенной выше, актаульна как никогда. Надо сказать, что построение бренда изменяет ролевой фирменный стиль, опираясь на опыт западных коллег. Дело в том, что привлечение</div>
+                                            </div>
+
+                                            <div class="schedule__item">
+                                                <i class="schedule__icon"></i>
+                                                <div class="schedule__time">10:00</div>
+                                                <div class="schedule__description">Ретроконверсия национального наследия, не меняя концепции, изложенной</div>
+                                            </div>
+                                            <div class="schedule__item">
+                                                <i class="schedule__icon"></i>
+                                                <div class="schedule__time">13:00</div>
+                                                <div class="schedule__description">Ретроконверсия национального наследия, не меняя концепции, изложенной выше, актаульна как никогда. Надо сказать, что построение бренда изменяет ролевой фирменный стиль,</div>
+                                            </div>
+                                            <div class="schedule__item">
+                                                <i class="schedule__icon"></i>
+                                                <div class="schedule__time">16:00</div>
+                                                <div class="schedule__description">Ретроконверсия национального наследия, не меняя концепции, изложенной выше, актаульна</div>
+                                            </div>
+                                        </div>
+                                        <div class="tab js-tab" id="schedule-2">
+                                            <div class="schedule__item">
+                                                <i class="schedule__icon"></i>
+                                                <div class="schedule__time">13:00</div>
+                                                <div class="schedule__description">Ретроконверсия национального наследия, не меняя концепции, изложенной выше, актаульна.</div>
+                                            </div>
+                                            <div class="schedule__item">
+                                                <i class="schedule__icon"></i>
+                                                <div class="schedule__time">09:00</div>
+                                                <div class="schedule__description">Ретроконверсия национального наследия, не меняя концепции, изложенной выше, актаульна как никогда. Надо сказать, что построение бренда изменяет ролевой фирменный стиль, опираясь на опыт западных коллег. Дело в том, что привлечение аудитории существенно ускоряет имидж, невзирая на действия конкурентов.</div>
+                                            </div>
+                                        </div>
+                                        <div class="tab js-tab" id="schedule-3">
+                                            <div class="schedule__item">
+                                                <i class="schedule__icon"></i>
+                                                <div class="schedule__time">16:00</div>
+                                                <div class="schedule__description">Ретроконверсия национального наследия, не меняя концепции, изложенной выше, актаульна как никогда. Надо сказать, что построение бренда изменяет ролевой фирменный стиль, опираясь на опыт западных коллег. Дело в том, что привлечение аудитории существенно ускоряет имидж, невзирая на действия конкурентов.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-decor team box-team" id="contactsId">
+                                <div class="team-row team-row-box">
+                                    <h3 class="team-title">Контактная информация</h3>
+                                    <a href="#backformModal" class="btn btn_mod-white js-fancybox">Написать организаторам</a>
+                                </div>
+                                <div class="team-subtitle">Ретроконверсия национального наследия, не меняя концепции, изложенной выше, актаульна</div>
+                                <div class="team-slider js-slider-9">
+                                    <a href="#teamModal" class="team-item js-fancybox-top js-fancybox" data-tab="tab-nav-1">
+                                        <img class="team-item__img" src="img/team-1.jpg" alt="Руководитель">
+                                        <div class="team-item__position">Руководитель</div>
+                                        <div class="team-item__name">Константинов<br class="br"> Константин</div>
+                                        <div class="team-item__tel">+7 123 456 78 90</div>
+                                    </a>
+                                    <a href="#teamModal" class="team-item js-fancybox-top js-fancybox" data-tab="tab-nav-2">
+                                        <img class="team-item__img" src="img/team-2.jpg" alt="Руководитель">
+                                        <div class="team-item__position">Руководитель</div>
+                                        <div class="team-item__name">Максимов<br class="br"> Олег</div>
+                                        <div class="team-item__tel">+7 123 456 78 90</div>
+                                    </a>
+                                    <a href="#teamModal" class="team-item js-fancybox-top js-fancybox" data-tab="tab-nav-3">
+                                        <img class="team-item__img" src="img/team-3.jpg" alt="Руководитель">
+                                        <div class="team-item__position">Руководитель</div>
+                                        <div class="team-item__name">Румянцева<br class="br"> Полина</div>
+                                        <div class="team-item__tel">+7 123 456 78 90</div>
+                                    </a>
+                                    <a href="#teamModal" class="team-item js-fancybox-top js-fancybox" data-tab="tab-nav-4">
+                                        <img class="team-item__img" src="img/team-4.jpg" alt="Руководитель">
+                                        <div class="team-item__position">Руководитель</div>
+                                        <div class="team-item__name">Михайлов<br class="br"> Андрей</div>
+                                        <div class="team-item__tel">+7 123 456 78 90</div>
+                                    </a>
+                                    <a href="#teamModal" class="team-item js-fancybox-top js-fancybox" data-tab="tab-nav-5">
+                                        <img class="team-item__img" src="img/team-5.jpg" alt="Руководитель">
+                                        <div class="team-item__position">Руководитель</div>
+                                        <div class="team-item__name">Силантьев<br class="br"> Максим</div>
+                                        <div class="team-item__tel">+7 123 456 78 90</div>
+                                    </a>
+                                    <a href="#teamModal" class="team-item js-fancybox-top js-fancybox" data-tab="tab-nav-1">
+                                        <img class="team-item__img" src="img/team-3.jpg" alt="Руководитель">
+                                        <div class="team-item__position">Руководитель</div>
+                                        <div class="team-item__name">Румянцева<br class="br"> Полина</div>
+                                        <div class="team-item__tel">+7 123 456 78 90</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="box-decor box-map" id="mapId">
+                                <div class="map-heading">
+                                    <h3 class="map-title">Как добраться?</h3>
+                                    <div class="map-description">
+                                        Сбор в 12:00 на площади — до парка едем группой на автобусе.
+                                        <br>
+                                        Если будете добираться сами, то можете оставить машину на стоянке на улице Пушкина, 13 
+                                    </div>
+                                </div>
+
+                                <div class="map" id="map">
+                                    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+                                    <script>
+                                    ymaps.ready(init);
+
+                                    function init() {
+                                       var myMap = new ymaps.Map('map', {
+                                                center: [55.727911, 37.599961],
+                                                zoom: 14,
+                                                controls: ['']
+                                            }, {
+                                                suppressMapOpenBlock: true
+                                            }),
+                                            myPlacemark = new ymaps.Placemark([55.727911, 37.599961], {
+                                                balloonContent: '<strong>ЦПКиО им.Горького</strong><br/>Адрес: ул. Крымский Вал, 9, Москва, Россия, 119049',
+                                                iconCaption: 'ЦПКиО им.Горького'
+                                            }, {
+                                               preset: 'islands#redDotIconWithCaption'
+                                            });
+                                        myMap.geoObjects.add(myPlacemark);
+
+                                        myMap.behaviors.disable('scrollZoom');
+                                        myMap.behaviors.disable('drag');
+                                    }
+                                    </script>
+                                </div>
+                            </div>
+            				<div class="box-decor box-past-events past-events" id="pastEventsId">
+                                <h3 class="past-events-title">Прошлые мероприятия</h3>
+                                <div class="photo-reports photo-reports-big longread-big js-slider-7">
+                                    <div class="photo-reports__item">
+                                        <a href="#" class="longread-wrap">
+                                            <div class="longread-photo" style="background-image: url(img/examples/histories_1.jpg)"></div>
+                                            <div class="longread__description">
+                                                <div class="longread-photo-span">29.03.2018 • 500 участников</div>
+                                                <div class="longread-photo-text">Установка детской площадки в Москве 29.03.2018</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="photo-reports__item">
+                                        <a href="#" class="longread-wrap">
+                                            <div class="longread-photo longread-photo-bg" style="background-image: url(img/examples/histories_1.jpg)"></div>
+                                            <div class="longread__description">
+                                                <div class="longread-photo-span">29.03.2018 • 500 участников</div>
+                                                <div class="longread-photo-text">Установка детской площадки в Москве 29.03.2018</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="box-recommendations">
+                    <div class="wrapper">
+                        <h2 class="h3 recommendations-title">Рекомендации</h2>
+                        <div class="recommendations js-slider-10">
+                            <a href="#" class="recommendations__item" style="background-image: url(img/examples/recommendation_1.jpg);">
+                                <div class="recommendations__details">
+                                    <div class="recommendations__category">Обустройство города</div>
+                                    <div class="recommendations__title">Установка лавочек в парках</div>
+                                </div>
+                            </a>
+                            <a href="#" class="recommendations__item" style="background-image: url(img/examples/recommendation_2.jpg);">
+                                <div class="recommendations__details">
+                                    <div class="recommendations__category">Создание инфрастуктуры</div>
+                                    <div class="recommendations__title">Строительство железных дорог</div>
+                                </div>
+                            </a>
+                            <a href="#" class="recommendations__item" style="background-image: url(img/examples/recommendation_3.jpg);">
+                                <div class="recommendations__details">
+                                    <div class="recommendations__category">Создание инфрастуктуры</div>
+                                    <div class="recommendations__title">Освещение улиц в регионах</div>
+                                </div>
+                            </a>
+                            <a href="#" class="recommendations__item" style="background-image: url(img/examples/recommendation_4.jpg);">
+                                <div class="recommendations__details">
+                                    <div class="recommendations__category">Обустройство города</div>
+                                    <div class="recommendations__title">Проведение субботников</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- CONTENT EOF   -->
+            <!-- BEGIN HEADER -->
+            <header>
+                <div class="header-overlay header-overlay-crowdsorsing" style="background-image: url(img/bg_crowdsorsing.jpg);"></div>
+                <div class="wrapper">
+                    <div class="header-wrap">
+                        <div class="header-top">
+                            <div class="header-top__logo">
+                                Logo
+                            </div>
+                            <div class="header-top__social">
+                                <ul class="social-list">
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-link"><i class="icons-facebook"></i></a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-link"><i class="icons-vkontakte"></i></a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-link"><i class="icons-youtube-play"></i></a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-link"><i class="icons-telegram"></i></a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-link"><i class="icons-odnoklassniki"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-top__profile">
+                                <a href="#" class="btn btn_profile">Войти</a>
+                            </div>
+                        </div>
+                        <div class="header-middle">
+                            <div class="box-bread-crumbs">
+                                <ul class="bread-crumbs">
+                                    <li class="bread-crumbs__item">
+                                        <a href="#" class="bread-crumbs__link">Делаем Россию лучше</a>
+                                    </li>
+                                    <li class="bread-crumbs__item">
+                                        <a href="#" class="bread-crumbs__link">Установка лавочек в парках</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h1 class="header-middle__titel header-middle__title">Установка лавочек в парке Пушкина</h1>
+                            <div class="header-middle__text header-middle__text-project">
+                                Начало повседневной работы по формированию позиции предоставляет широкие возможности для форм воздействия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности напрямую зависит от новых предложений. В целом, конечно, убежденность некоторых оппонентов создает предпосылки для новых принципов формирования материально-технической и кадровой базы.
+                            </div>
+                            <div class="header-middle__list">
+                                <div class="header-middle__list-inner">
+                                    <a href="#" class="header-middle__list_title"><img src="img/examples/logo_nacii.png" class="header-middle__logo" alt=""><span>Организация объединенных наций</span></a><i class="sep">•</i><div><a href="#"><span>Название направления</span></a></div><i class="sep">•</i><span>Москва</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-bottom header-bottom_project header-bottom_crowdsorsing js-slider-20">
+                            <div class="activity-item header-bottom__projects">
+                                <span class="activity-item-count">150</span>
+                                <small class="activity-item-small">Волонтёров необходимо</small>
+                            </div>
+                            <div class="header-bottom__activity">
+                                <div class="activity-item">
+                                    <span class="projects-item-count">06.04.2018</span><br class="br">
+                                    <small class="projects-item-small">Дата начала проекта</small>
+                                </div>
+                                <div class="activity-item">
+                                    <span class="projects-item-count">13:00</span><br class="br">
+                                    <small class="projects-item-small">Время начала</small>
+                                </div>
+                                <div class="activity-item">
+                                    <span class="projects-item-count">270 000 ₽</span><br class="br">
+                                    <small class="projects-item-small">Общий бюджет мероприятия</small>
+                                </div>
+                                <div class="activity-item show-mob">
+                                    <div class="activity-item header-bottom__projects">
+                                        <span class="activity-item-count">150</span>
+                                        <small class="activity-item-small">Волонтёров необходимо</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER EOF   -->	
+            <!-- BEGIN FOOTER -->	
+            <footer>
+                <div class="wrapper">
+                    <div class="footer-wrapp">
+                        <div class="footer-logo">Logo</div>
+                        <div class="footer-text">Делаем Россию лучше, 2018 год</div>
+                        <div class="footer-social">
+                            <ul class="social-list">
+                                <li class="social-list__item">
+                                    <a href="#" class="social-link"><i class="icons-facebook"></i></a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-link"><i class="icons-vkontakte"></i></a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-link"><i class="icons-youtube-play"></i></a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-link"><i class="icons-telegram"></i></a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-link"><i class="icons-odnoklassniki"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- FOOTER EOF   -->
+        </div>
+
+
+        <!-- MODALS -->
+        <div id="volunteerModal" class="modal modal-big modal-volunteer">
+            <div class="modal__head">
+                <h3 class="modal__heading">Стать волонтером</h3>
+            </div>
+            <div class="modal__body vertical-scroll js-vertical-scroll-modal">
+                <form>
+                    <div class="volunteer-form">
+                        <div class="volunteer-form__left js-modal-choice">
+                            <div class="volunteer-form__selected">
+                                <div class="volunteer-form__row">
+                                    <div class="volunteer-form__title">Ваш тип участия</div>
+                                    <div class="volounter-arrows js-volounter-arrows"></div>
+                                </div>
+                                <div class="volunteer-slider js-slider-5 js-volounter-slider">
+                                    <div class="volunteer-slider__item">
+                                        <input type="radio" id="participation-confirm-1"  name="participation-confirm" class="type-participation__input styled" checked>
+                                        <label for="participation-confirm-1" class="volunteer-slider__label">
+                                            <span class="volunteer-slider__title">Денежное вознаграждение</span>
+                                            <span class="volunteer-slider__description">Символическая сумма, получение наличными в центре Москвы или переводом на карту</span>
+                                            <span class="volunteer-slider__count">1000 ₽</span>
+                                        </label>
+                                    </div>
+                                    <div class="volunteer-slider__item">
+                                        <input type="radio" id="participation-confirm-2"  name="participation-confirm" class="type-participation__input styled">
+                                        <label for="participation-confirm-2" class="volunteer-slider__label">
+                                            <span class="volunteer-slider__title">Альбом в подарок</span>
+                                            <span class="volunteer-slider__description">Альбом с фотографиями на память, получение самовывозом в центре Москвы</span>
+                                            <span class="volunteer-slider__count">Бесплатно</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="volunteer-form__choices">
+                                    <div class="volunteer-form__info">
+                                        <i class="icon-calendar"></i><span class="volunteer-form__text">15.01.2018 — 17.01.2018</span>
+                                    </div> 
+                                    <div class="volunteer-form__info">
+                                        <i class="icon-note"></i><span class="volunteer-form__text">Установка лавочек, покраска древесины, знание английского, коммуникабельность и стрессоустойчивость</span>
+                                    </div>
+                                </div>                                
+                                <a href="#" class="btn_blue btn-form-send btn-accept js-accept-choice">Подтвердить</a>
+                            </div>                    
+                            <div class="box-field-textarea">
+                                <textarea class="form-control support-textarea" placeholder="Почему я поддержал…"></textarea>
+                            </div>
+                        </div>
+                        <div class="volunteer-form__right js-modal-form">
+                            <div class="volunteer-form__title">Ваши данные</div>
+                            <div class="box-field">
+                                <label class="box-field__label">Имя</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="box-field">
+                                <label class="box-field__label">Фамилия</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="box-field">
+                                <label class="box-field__label">Дата рождения</label>
+                                <div class="box-field-calendar box-field-calendar_decor">
+                                    <input type="text" class="form-control form-control-date js-date-single" data-min="1901">
+                                    <i class="icon-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="box-field">
+                                <label class="box-field__label">Уровень английского</label>
+                                <select class="styled" data-placeholder="Intermediate">
+                                    <option></option>
+                                    <option>Beginner</option>
+                                    <option>Elementary</option>
+                                    <option>Pre-Intermediate</option>
+                                    <option>Intermediate</option>
+                                </select>
+                            </div>                   
+                            <div class="box-field-textarea">
+                                <textarea class="form-control support-textarea" placeholder="Почему я поддержал…"></textarea>
+                            </div>
+                            <div class="volunteer-form__btn">
+                                <div class="accept">Нажимая на кнопку я даю согласие <a href="#">на обработку персональных данных</a></div>
+                                <input type="submit" value="Поддержать" class="btn_blue btn-form-send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="backformModal" class="modal modal-big modal-backform">
+            <div class="modal__head">
+                <h3 class="modal__heading">Написать организаторам</h3>
+            </div>
+            <div class="modal__body vertical-scroll js-vertical-scroll-modal">
+                <div class="modal-backform__description">Напишите несколько предложений о своей проблеме и мы постараемся помочь вам как можно быстрее</div>
+                <form>
+                    <div class="box-field">
+                        <textarea class="form-control backform-textarea" placeholder="Начните писать…"></textarea>                        
+                    </div>
+                    <div class="modal-backform__btn">
+                        <input type="submit" value="Написать" class="btn_blue btn-form-send btn-backform">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="teamModal" class="modal modal-big modal-team">
+            <div class="modal__head">
+                <h3 class="modal__heading">Команда</h3>
+            </div>
+            <div class="modal__body vertical-scroll js-vertical-scroll-modal">
+                <div class="team-tabs js-tab-wrap">
+                    <div class="team-tabs__nav js-horisontal-scroll-mob">
+                        <ul class="team-nav">
+                            <li class="team-nav__item">
+                                <a href="#tab-1" class="team-nav__link active js-tab-nav" id="tab-nav-1">
+                                    <div class="team-nav__avatar" style="background-image: url(img/team-1.jpg);"></div>
+                                    <div class="team-nav__details">
+                                        <div class="team-nav__title">Игорь Михалков</div>
+                                        <div class="team-nav__post">Руководитель проекта</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="team-nav__item">
+                                <a href="#tab-2" class="team-nav__link js-tab-nav" id="tab-nav-2">
+                                    <div class="team-nav__avatar" style="background-image: url(img/team-2.jpg);"></div>
+                                    <div class="team-nav__details">
+                                        <div class="team-nav__title">Анна Смирнова</div>
+                                        <div class="team-nav__post">Помощник</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="team-nav__item">
+                                <a href="#tab-3" class="team-nav__link js-tab-nav" id="tab-nav-3">
+                                    <div class="team-nav__avatar" style="background-image: url(img/team-3.jpg);"></div>
+                                    <div class="team-nav__details">
+                                        <div class="team-nav__title">Анна Смирнова</div>
+                                        <div class="team-nav__post">Помощник</div>
+                                    </div>                                
+                                </a>
+                            </li>
+                            <li class="team-nav__item">
+                                <a href="#tab-4" class="team-nav__link js-tab-nav" id="tab-nav-4">
+                                    <div class="team-nav__avatar" style="background-image: url(img/team-1.jpg);"></div>
+                                    <div class="team-nav__details">
+                                        <div class="team-nav__title">Анна Смирнова</div>
+                                        <div class="team-nav__post">Помощник</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="team-nav__item">
+                                <a href="#tab-5" class="team-nav__link js-tab-nav" id="tab-nav-5">
+                                    <div class="team-nav__avatar" style="background-image: url(img/team-2.jpg);"></div>
+                                    <div class="team-nav__details">
+                                        <div class="team-nav__title">Константин Мих</div>
+                                        <div class="team-nav__post">Руководитель проекта</div>
+                                    </div>                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="team-tabs__wrap">
+                        <div class="tab js-tab active" id="tab-1">
+                            <div class="table-as team-tabs__table">
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">ФИО руководителя проекта</div>
+                                    <div class="td-as col-2">Игорь Владимирович Михалков</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Должность в организации</div>
+                                    <div class="td-as col-2">Владелец</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Дополнительная информация</div>
+                                    <div class="td-as col-2">Способствовать возрождению и укоренению православных духовно-нравственных традиций, консолидации общества вокруг</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Телефон</div>
+                                    <div class="td-as col-2"><a href="tel:+71234567890">+7 (123) 456-78-90</a></div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Электронная почта</div>
+                                    <div class="td-as col-2"><a href="mailto:+mikhalkov@mail.ru">mikhalkov@mail.ru</a></div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Опыт в других проектах</div>
+                                    <div class="td-as col-2">Владелец</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Должность в организации</div>
+                                    <div class="td-as col-2">
+                                        <div class="team-tabs__list">Название проекта 1</div>
+                                        <div class="team-tabs__list">Название проекта 2</div>
+                                    </div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Дополнительная информация</div>
+                                    <div class="td-as col-2">Способствовать возрождению и укоренению православных духовно-нравственных традиций, консолидации общества вокруг</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab js-tab" id="tab-2">
+                            <div class="table-as team-tabs__table">
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">ФИО руководителя проекта</div>
+                                    <div class="td-as col-2">Анна Смирнова</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Должность в организации</div>
+                                    <div class="td-as col-2">Владелец</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Дополнительная информация</div>
+                                    <div class="td-as col-2">Способствовать возрождению и укоренению православных духовно-нравственных традиций, консолидации общества вокруг</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Телефон</div>
+                                    <div class="td-as col-2"><a href="tel:+71234567890">+7 (123) 456-78-90</a></div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Электронная почта</div>
+                                    <div class="td-as col-2"><a href="mailto:+mikhalkov@mail.ru">mikhalkov@mail.ru</a></div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Опыт в других проектах</div>
+                                    <div class="td-as col-2">Владелец</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Должность в организации</div>
+                                    <div class="td-as col-2">
+                                        <div class="team-tabs__list">Название проекта 1</div>
+                                        <div class="team-tabs__list">Название проекта 2</div>
+                                    </div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Дополнительная информация</div>
+                                    <div class="td-as col-2">Способствовать возрождению и укоренению православных духовно-нравственных традиций, консолидации общества вокруг</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab js-tab" id="tab-3">
+                            <div class="table-as team-tabs__table">
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">ФИО руководителя проекта</div>
+                                    <div class="td-as col-2">Анна Смирнова</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Должность в организации</div>
+                                    <div class="td-as col-2">Владелец</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Дополнительная информация</div>
+                                    <div class="td-as col-2">Способствовать возрождению и укоренению православных духовно-нравственных традиций, консолидации общества вокруг</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Телефон</div>
+                                    <div class="td-as col-2"><a href="tel:+71234567890">+7 (123) 456-78-90</a></div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Электронная почта</div>
+                                    <div class="td-as col-2"><a href="mailto:+mikhalkov@mail.ru">mikhalkov@mail.ru</a></div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Опыт в других проектах</div>
+                                    <div class="td-as col-2">Владелец</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab js-tab" id="tab-4">
+                            <div class="table-as team-tabs__table">
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">ФИО руководителя проекта</div>
+                                    <div class="td-as col-2">Анна Смирнова</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Должность в организации</div>
+                                    <div class="td-as col-2">Владелец</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Дополнительная информация</div>
+                                    <div class="td-as col-2">Способствовать возрождению и укоренению православных духовно-нравственных традиций, консолидации общества вокруг</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Телефон</div>
+                                    <div class="td-as col-2"><a href="tel:+71234567890">+7 (123) 456-78-90</a></div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Электронная почта</div>
+                                    <div class="td-as col-2"><a href="mailto:+mikhalkov@mail.ru">mikhalkov@mail.ru</a></div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Опыт в других проектах</div>
+                                    <div class="td-as col-2">Владелец</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Должность в организации</div>
+                                    <div class="td-as col-2">
+                                        <div class="team-tabs__list">Название проекта 1</div>
+                                        <div class="team-tabs__list">Название проекта 2</div>
+                                    </div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Дополнительная информация</div>
+                                    <div class="td-as col-2">Способствовать возрождению и укоренению православных духовно-нравственных традиций, консолидации общества вокруг</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab js-tab" id="tab-5">
+                            <div class="table-as team-tabs__table">
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">ФИО руководителя проекта</div>
+                                    <div class="td-as col-2">Константин Мих</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Должность в организации</div>
+                                    <div class="td-as col-2">Владелец</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Дополнительная информация</div>
+                                    <div class="td-as col-2">Способствовать возрождению и укоренению православных духовно-нравственных традиций, консолидации общества вокруг</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Телефон</div>
+                                    <div class="td-as col-2"><a href="tel:+71234567890">+7 (123) 456-78-90</a></div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Электронная почта</div>
+                                    <div class="td-as col-2"><a href="mailto:+mikhalkov@mail.ru">mikhalkov@mail.ru</a></div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Опыт в других проектах</div>
+                                    <div class="td-as col-2">Владелец</div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Должность в организации</div>
+                                    <div class="td-as col-2">
+                                        <div class="team-tabs__list">Название проекта 1</div>
+                                        <div class="team-tabs__list">Название проекта 2</div>
+                                    </div>
+                                </div>
+                                <div class="row-as">
+                                    <div class="td-as th-as col-1">Дополнительная информация</div>
+                                    <div class="td-as col-2">Способствовать возрождению и укоренению православных духовно-нравственных традиций, консолидации общества вокруг</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODALS EOF -->
+
+        <div class="icons-load"></div>
+        <!-- BODY EOF   -->
+        <script src="js/jquery-3.0.0.min.js"></script>		
+        <script src="js/jquery-migrate-1.4.1.min.js" ></script>
+        <script src="js/jquery.fancybox.min.js" ></script>
+        <script src="js/slick.js"></script>
+        <script src="js/jquery.mCustomScrollbar.js" ></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script src="js/components/jquery.validate.min.js"></script>
+        <script src="js/components/moment.min.js"></script>
+        <script src="js/components/daterangepicker.js"></script>
+        <script src="js/custom.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+@font-face {
+	font-family: 'PTSans';
+	src: url('../fonts/PTSans/PTSansRegular/PTSansRegular.eot');
+	src: url('../fonts/PTSans/PTSansRegular/PTSansRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/PTSans/PTSansRegular/PTSansRegular.woff') format('woff'), url('../fonts/PTSans/PTSansRegular/PTSansRegular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FFFD;
+}
+
+@font-face {
+	font-family: 'PTSans';
+	src: url('../fonts/PTSans/PTSansBold/PTSansBold.eot');
+	src: url('../fonts/PTSans/PTSansBold/PTSansBold.eot?#iefix') format('embedded-opentype'), url('../fonts/PTSans/PTSansBold/PTSansBold.woff') format('woff'), url('../fonts/PTSans/PTSansBold/PTSansBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FFFD;
+}
+
+@font-face {
+	font-family: 'PTSansCaption';
+	src: url('../fonts/PTSansCaption/PTSansCaptionBold/PTSansCaptionBold.eot');
+	src: url('../fonts/PTSansCaption/PTSansCaptionBold/PTSansCaptionBold.eot?#iefix') format('embedded-opentype'), url('../fonts/PTSansCaption/PTSansCaptionBold/PTSansCaptionBold.woff') format('woff'), url('../fonts/PTSansCaption/PTSansCaptionBold/PTSansCaptionBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FFFD;
+}
+
+@font-face {
+	font-family: 'PTSansCaption';
+	src: url('../fonts/PTSansCaption/PTSansCaptionRegular/PTSansCaptionRegular.eot');
+	src: url('../fonts/PTSansCaption/PTSansCaptionRegular/PTSansCaptionRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/PTSansCaption/PTSansCaptionRegular/PTSansCaptionRegular.woff') format('woff'), url('../fonts/PTSansCaption/PTSansCaptionRegular/PTSansCaptionRegular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FFFD;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/Fontello/fontello.eot?81963059');
+  src: url('../fonts/Fontello/fontello.eot?81963059#iefix') format('embedded-opentype'),
+       url('../fonts/Fontello/fontello.woff2?81963059') format('woff2'),
+       url('../fonts/Fontello/fontello.woff?81963059') format('woff'),
+       url('../fonts/Fontello/fontello.ttf?81963059') format('truetype'),
+       url('../fonts/Fontello/fontello.svg?81963059#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?11417796#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icons-"]:before, [class*=" icons-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+
+
+
+.icons-twitter:before { content: '\f099'; } /* '' */
+.icons-facebook:before { content: '\f09a'; } /* '' */
+.icons-mail-alt:before { content: '\f0e0'; } /* '' */
+.icons-quote-left:before { content: '\f10d'; } /* '' */
+.icons-quote-right:before { content: '\f10e'; } /* '' */
+.icons-youtube-play:before { content: '\f16a'; } /* '' */
+.icons-vkontakte:before { content: '\f189'; } /* '' */
+.icons-telegram:before { content: '\f1d9'; } /* '' */
+.icons-odnoklassniki:before { content: '\f263'; } /* '' */
+.icons-envelope:before { content: '\e905'; font-family: "icomoon" } /* '' */
+.icons-skype:before { content: '\eac5'; font-family: "icomoon" } /* '' */
+.icons-linkedin:before { content: '\eaca'; font-family: "icomoon" } /* '' */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?mrqpj1');
+  src:  url('../fonts/icomoon/icomoon.eot?mrqpj1#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?mrqpj1') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?mrqpj1') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?mrqpj1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

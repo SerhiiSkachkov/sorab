@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>45BD72CA-BF2C-4F3F-9D27-D24A405B5D83</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Icons/Arrow_black_r" stroke="#333333">
+            <g id="Group" transform="translate(7.000000, 3.500000)">
+                <path d="M7,0 L0,7" id="Shape" transform="translate(3.500000, 3.500000) scale(1, -1) translate(-3.500000, -3.500000) "></path>
+                <path d="M0,7 L7,14" id="Shape" transform="translate(3.500000, 10.500000) scale(1, -1) translate(-3.500000, -10.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

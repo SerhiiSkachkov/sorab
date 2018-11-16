@@ -1,0 +1,34 @@
+/* main variables */
+.event-marker {
+  position: absolute;
+  top: -6px;
+  width: 10px;
+  height: 10px;
+  background-color: #f8f8f8;
+  border: 2px solid #dfdfdf;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.timeline-tick {
+  position: absolute;
+  bottom: 0;
+  width: 2px;
+  height: 20px;
+  background-color: #dfdfdf;
+}
+#timeline {
+  position: absolute;
+  z-index: 1;
+  top: 69px;
+  min-width: 900px;
+  height: 2px;
+  background-color: #dfdfdf;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*# sourceMappingURL=activity.css.map */
